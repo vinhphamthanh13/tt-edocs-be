@@ -1,0 +1,15 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "uri": "mongodb://TuongNguyen:TandT2020@edocuments-shard-00-00-rnjbg.mongodb.net:27017,edocuments-shard-00-01-rnjbg.mongodb.net:27017,edocuments-shard-00-02-rnjbg.mongodb.net:27017/test?ssl=true&replicaSet=edocuments-shard-0&authSource=admin&retryWrites=true&w=majority"
+      },
+      "options": {
+        "ssl": true,
+        "authenticationDatabase": "admin"
+      }
+    }
+  }
+}

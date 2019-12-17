@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "UserData",
+  "info": {
+    "name": "userdata",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "document_id": {
+      "required": true,
+      "type": "string"
+    },
+    "document_name": {
+      "required": true,
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}

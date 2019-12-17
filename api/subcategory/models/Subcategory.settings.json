@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "SubCategory",
+  "info": {
+    "name": "subcategory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "category": {
+      "model": "category",
+      "via": "subcategories"
+    },
+    "documents": {
+      "collection": "documents",
+      "via": "subcategory"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="24">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Changa+One');
+    </style>
+  </defs>
+  <text x="0" y="20" font-size="34" fill="white" style="font-family: 'Changa One', cursive;">
+    T&amp;T
+  </text>
+</svg>

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/statistics",
+      "handler": "Statistics.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/statistics/count",
+      "handler": "Statistics.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/statistics/:_id",
+      "handler": "Statistics.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/statistics",
+      "handler": "Statistics.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/statistics/:_id",
+      "handler": "Statistics.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/statistics/:_id",
+      "handler": "Statistics.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

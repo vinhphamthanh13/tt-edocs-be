@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "Statistics",
+  "info": {
+    "name": "statistics",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "download_name": {
+      "required": true,
+      "type": "string"
+    },
+    "download_count": {
+      "type": "biginteger",
+      "default": "0",
+      "required": true
+    },
+    "download_id": {
+      "type": "string"
+    }
+  }
+}
