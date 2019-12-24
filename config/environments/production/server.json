@@ -1,6 +1,6 @@
 {
-  "host": "tandt-be.herokuapp.com",
-  "port": "${process.env.PORT || 1337}",
+  "host": "${process.env.APP_HOST || '157.245.151.71'}",
+  "port": "${process.env.APP_PORT || 1337}",
   "production": true,
   "proxy": {
     "enabled": false

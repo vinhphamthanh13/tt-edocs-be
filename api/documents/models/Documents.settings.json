@@ -28,18 +28,14 @@
       "required": true,
       "default": "1"
     },
-    "pdf": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
-    "word": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "format": {
       "model": "format"
+    },
+    "pdfUrl": {
+      "type": "string"
+    },
+    "wordUrl": {
+      "type": "string"
     }
   }
 }
