@@ -17,10 +17,6 @@
     "category": {
       "model": "category",
       "via": "subcategories"
-    },
-    "documents": {
-      "collection": "documents",
-      "via": "subcategory"
     }
   }
 }
