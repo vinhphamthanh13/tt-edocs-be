@@ -18,6 +18,7 @@ module.exports = {
     if (ctx.query._q) {
       return strapi.services.category.search(ctx.query);
     } else {
+      // return strapi.services.category.fetchAll(ctx.query, populate);
       const collection = {};
       const catEntities = await strapi.services.category.fetchAll(ctx.query, populate);
       catEntities.map(entity => {
@@ -33,7 +34,7 @@ module.exports = {
         };
         return null;
       });
-      const documentEntities = await strapi.services.documents.fetchAll(ctx.query, populate);
+      const documentEntities = await strapi.services.document.fetchAll(ctx.query, populate);
       documentEntities.map(entity => {
         const catId = entity.subcategory.category;
         const subId = entity.subcategory.id;

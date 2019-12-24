@@ -13,6 +13,10 @@
       "required": true,
       "type": "string",
       "default": "Word and PDF"
+    },
+    "documents": {
+      "collection": "document",
+      "via": "format"
     }
   }
 }

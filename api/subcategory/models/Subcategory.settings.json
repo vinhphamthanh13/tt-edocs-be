@@ -17,6 +17,10 @@
     "category": {
       "model": "category",
       "via": "subcategories"
+    },
+    "documents": {
+      "collection": "document",
+      "via": "subcategory"
     }
   }
 }

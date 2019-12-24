@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "Documents",
+  "info": {
+    "name": "document",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "pdfUrl": {
+      "type": "string"
+    },
+    "wordUrl": {
+      "type": "string"
+    },
+    "rate": {
+      "type": "integer",
+      "required": true,
+      "default": "-1"
+    },
+    "pages": {
+      "type": "integer",
+      "required": true,
+      "default": "1"
+    },
+    "subcategory": {
+      "model": "subcategory",
+      "via": "documents"
+    },
+    "format": {
+      "model": "format",
+      "via": "documents"
+    }
+  }
+}
